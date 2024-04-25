@@ -1,3 +1,6 @@
+@import "../../style/scss/mixins/mixins";
+@import "../../style/scss/vars/vars";
+
 .SideNav{
     margin-top: 1em;
     padding: .6em;
@@ -24,6 +27,7 @@
             a{
                 text-decoration: none;
                 color: black;
+                @include underlineTransition(.35,.3s,#000000)
             }
         }
     }

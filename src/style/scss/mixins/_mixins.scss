@@ -1,0 +1,24 @@
+//trad u-line width 1.1
+//trad u-line time .2s
+//trad hoverColor pearlwhite
+@mixin underlineTransition($underlineWidth,$underlineTime,$AHoverColor) {
+    &::after{
+        content: '';
+        display: block;
+        bottom: 0;
+        left: 0;
+        height:0.2em;
+        background-color: $AHoverColor;
+        transform: scaleX(0);
+        transition-property: transform;
+        transition-duration: $underlineTime;
+    }
+
+    &:hover{
+        &::after{
+            transform: scaleX($underlineWidth);
+        }
+        color:$AHoverColor;
+
+    }
+}
