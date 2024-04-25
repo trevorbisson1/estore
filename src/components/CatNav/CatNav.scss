@@ -1,0 +1,30 @@
+$hoverColor : antiquewhite;
+$gapDistance : 4em;
+$backgroundColor : #444444;
+$paddingDistance : .25em;
+
+.CatNav {
+    border-top: 1px ;
+    background-color: $backgroundColor;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: $gapDistance ;
+        padding-top: $paddingDistance;
+        padding-bottom: $paddingDistance;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: .8em;
+            font-weight: 700;
+        }
+        a:hover{
+            color:$hoverColor
+        }
+    }
+
+}
