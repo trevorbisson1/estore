@@ -1,6 +1,12 @@
 @import "../../style/scss/mixins/mixins";
 @import "../../style/scss/vars/vars";
 
+.AllProductsWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .Product{
     display: flex;
     flex-direction: column;
