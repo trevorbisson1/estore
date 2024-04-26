@@ -1,6 +1,10 @@
+import { useSelector } from "react-redux";
 import "./SideNav.scss"
+import accordianSice from "../../store/slices/accordianCatSlice";
 
 const SideNav = () => {
+
+    const accordianData = useSelector(accordianSice.getInitialState)
     return (
         <div className="SideNav">
             <h3 className="SectionTitle">Categories</h3>
