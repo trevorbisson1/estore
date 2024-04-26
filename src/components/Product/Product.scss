@@ -1,0 +1,24 @@
+@import "../../style/scss/mixins/mixins";
+@import "../../style/scss/vars/vars";
+
+.Product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    height: fit-content;
+    border: 1px solid gainsboro;
+    box-shadow: 3px 1px 14px 0px lightgray;
+    border-radius: .6em;
+    a{
+        padding-top: 1em;
+        text-decoration: none;
+        font-weight: 700;
+        color:black;
+        @include underlineTransition(1.1,1s,black)
+    }
+    &:hover{
+        background-color: gainsboro;
+    }
+}
