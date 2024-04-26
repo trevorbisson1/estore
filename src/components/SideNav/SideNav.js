@@ -3,7 +3,7 @@ import "./SideNav.scss"
 const SideNav = () => {
     return (
         <div className="SideNav">
-            <h3 className="SectionTitle">SideBar!</h3>
+            <h3 className="SectionTitle">Categories</h3>
 
             <div className='accordion'>
                 <div className='accordion-item individual-category' >
@@ -19,7 +19,7 @@ const SideNav = () => {
                             <ul>
                                 <li className='sub-items'> <a href='#'>Coats</a> </li>
                                 <li className='sub-items'> <a href='#'>Boots</a> </li>
-                                <li className='sub-items'> <a href='#'>Part Wear</a> </li>
+                                <li className='sub-items'> <a href='#'>Party Wear</a> </li>
                                 <li className='sub-items'> <a href='#'>Shirts</a> </li>
                             </ul>
                         </div>

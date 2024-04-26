@@ -44,6 +44,13 @@ const Product = ()=>{
                         <img src={require("../../assests/images/shop/"+product.pImg)}></img>
                         <a href="#">{product.pName}</a>
                         <p>${product.pPrice}</p>
+                        <div className="Rating-Section">
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                            <i className="fa fa-star"></i>
+                        </div>
                     </div>
 
                 )
