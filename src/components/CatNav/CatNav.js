@@ -1,7 +1,6 @@
-import {  useSelector, useDispatch } from "react-redux";
+
 import "./CatNav.scss"
-import { useEffect } from "react";
-import { getCategories } from "../../Redux/Category/actions";
+
 const CatNav = () => {
 
     const categories = ["Men's","Women's","Kid's","Best Deals!","All"];
