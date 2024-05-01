@@ -3,6 +3,7 @@ import './App.css';
 import CatNav from './components/CatNav/CatNav';
 import Header from "./components/Header/Header"
 import MainComponent from './components/MainComponent';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <CatNav></CatNav>
       <Routes>
         <Route path="/" Component={MainComponent}/>
+        <Route path='/Cart' Component={Cart}/>
       </Routes>
     </div>
   );
