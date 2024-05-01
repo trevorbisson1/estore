@@ -1,9 +1,13 @@
 import React from "react";
 import SearchBar from "./Search";
 import "./Header.css"
+import { useSelector } from "react-redux";
 
 
 function Header(){
+
+    const cartItemCount = useSelector(state=>state.cr.totalQuantity);
+
     return (
         <div className="Header">
             <div className="Header-Name">
@@ -14,7 +18,19 @@ function Header(){
                     <h5><a href="#">Login</a></h5>
                     <h5><a href="#">Register</a></h5> 
                     <i className="fa fa-heart"/>
-                    <i className="fa fa-shopping-cart"/>
+                    <div className="cart-n-counter">
+                        <i className="fa fa-shopping-cart"/>
+                        {
+                            
+                            cartItemCount !==0 ? 
+                        <div id="cart-item-counter">
+                        <p>{cartItemCount}</p> 
+                        </div>
+                        
+                        : <></>
+                        
+                        }
+                    </div>
                 </div>
             </div>
         </div>
