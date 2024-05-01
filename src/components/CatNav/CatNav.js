@@ -1,12 +1,12 @@
-import { useSelector } from "react-redux";
+import {  useSelector, useDispatch } from "react-redux";
 import "./CatNav.scss"
-import categorySlice from "../../store/slices/categorySlice/CategorySlice";
-
+import { useEffect } from "react";
+import { getCategories } from "../../Redux/Category/actions";
 const CatNav = () => {
 
-    const categories = useSelector(categorySlice.getInitialState);
+    const categories = ["Men's","Women's","Kid's","Best Deals!","All"];
 
-    return(
+     return(
         <div className="CatNav">
             <ul>
                 {
