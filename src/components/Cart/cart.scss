@@ -1,0 +1,25 @@
+.cartComponent{
+    display:flex ;
+    justify-content: center;
+    flex-direction: row;
+    .emptyCart{
+        margin-top:10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: black;
+            background-color: antiquewhite;
+            padding: 5%;
+            font-weight: 700;
+            border-radius: 5%;
+
+            &:hover{
+                background-color: rgba(250, 225, 193, 0.925);
+            }
+        }
+    }
+}
