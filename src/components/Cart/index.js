@@ -15,7 +15,15 @@ const Cart = ()=>{
                 </div>
                 :
                 <div className="FilledCart">
-
+                    {
+                        cart.cartItems.map((products,key)=>{
+                            return(
+                                <div className="checkoutItem">
+                                    <span>{products.pName}</span>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             }
         </div>

@@ -13,12 +13,12 @@ const cartSlice = createSlice({
     reducers:{
         addCartItem : (state,action)=>{
             let item_exist = state.cartItems.find((item) =>item.pImg === action.payload.pImg);
+            if(!item_exist)
+            {
             state.cartItems = [...state.cartItems, action.payload];
             state.totalQuantity = ++state.totalQuantity;
             state.totalItemsPrice = state.totalItemsPrice + action.payload.pPrice;
             
-            if(!item_exist)
-            {
                 state.totalItems = ++state.totalItems;
             }
         }
